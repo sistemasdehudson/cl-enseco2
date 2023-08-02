@@ -22,8 +22,8 @@
     'name': 'enseco2',
     'version': '13.0.1.0.0',
     'category': 'Tools',
-    'summary': "Proyecto enseco",
-    'author': "SDH",
+    'summary': 'Proyecto enseco',
+    'author': 'SDH',
     'website': 'http://github.com/jobiols/cl-test',
     'license': 'AGPL-3',
     'depends': [
