@@ -1,35 +1,16 @@
-##############################################################################
-#
-#    Copyright (C) 2021  jeo Software  (http://www.jeosoft.com.ar)
-#    All Rights Reserved.
-#
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Affero General Public License as
-#    published by the Free Software Foundation, either version 3 of the
-#    License, or (at your optiogitn) any later version.
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Affero General Public License for more details.
-#
-#    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#   le agregamos esto
-##############################################################################
-
 {
     'name': 'enseco2',
-    'version': '13.0.1.0.0',
+    'version': '13.0.0.0',
     'category': 'Tools',
     'summary': 'Proyecto enseco',
     'author': 'SDH',
     'website': 'http://github.com/jobiols/cl-test',
     'license': 'AGPL-3',
     'depends': [
+        'base',
         ],
     'installable': True,
-
+    'application': False,
     # manifest version, if omitted it is backward compatible
     'env-ver': '2',
 
@@ -37,19 +18,17 @@
     'odoo-license': 'CE',
 
     # Config to write in odoo.conf
-    'config': [
-        'limit_request': '8196',
-        'limit_memory_soft': '640000000',
-        'limit_memory_hard': '760000000',
-        'limit_time_cpu': '60',
-        'limit_time_real': '120',
+    #'config': [
+    #    'limit_request': '8196',
+    #    'limit_memory_soft': '640000000',
+    #   'limit_memory_hard': '760000000',
+    #    'limit_time_cpu': '60',
+    #   'limit_time_real': '120',
     #'dbfilter': 'goldway',
-        'workers = 6',
-        'server_wide_modules = web,queue_job',
-    ],
-
+    #    'workers = 6',
+    #    'server_wide_modules = web,queue_job',
+    #],
     'port': '8069',
-
     'git-repos': [
         'https://github.com/sistemasdehudson/cl-enseco2',
         'https://github.com/regaby/odoo-custom.git',
